@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 import cloud from "./images/cloud.png";
 import mountain from "./images/mountain.png";
+import ProfilePic from "./images/profileimage.jpeg";
+import Skills from "./images/skills.png";
+import Laptop from "./images/analytics.png";
 
 function App() {
   return (
@@ -9,38 +12,44 @@ function App() {
       <div className="top-container">
         <img src={cloud} alt="cloud" className="top-cloud"></img>
         <h1>I'm Marsha</h1>
-        <p>
+        <h2 className="subtitle">
           a <span className="pro">pro</span>grammer
-        </p>
+        </h2>
         <img src={cloud} alt="cloud" className="bottom-cloud"></img>
         <img src={mountain} alt="mountain" className="mountain"></img>
       </div>
-
+      <br></br>
       <div className="middle-container">
         <div className="profile">
-          <img src="" alt=""></img>
-          <h2>Hello.</h2>
+          <img
+            src={ProfilePic}
+            alt="My profile pic"
+            className="profilePic"
+          ></img>
+          <h2>Hello</h2>
           <p>
-            Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna.
-            Non auctor, montes nulla distinctio.
+            I'm a Web Developer who uses React, JavaScript, and CSS to create
+            websites you <span className="emphasiseIt">really</span> want to
+            look it. I also <span className="perfectPink">&hearts;</span>{" "}
+            coffee, nature, and electric guitar.
           </p>
         </div>
         <hr></hr>
         <div className="skills">
-          <h2>My Skills.</h2>
+          <h2>My Skills</h2>
           <div className="skill-row">
-            <img className="" src="" alt=""></img>
+            <img className="skillsPic" src={Skills} alt=""></img>
             <h3>Lorem & Ipsum</h3>
-            <p>
+            <p className="skillDescription">
               Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
               Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
               nam, lectus ante, ut lorem eros.
             </p>
           </div>
           <div className="skill-row">
-            <img className="" src="" alt=""></img>
+            <img className="laptopPic" src={Laptop} alt=""></img>
             <h3>Lorem Ipsum Dolor</h3>
-            <p>
+            <p className="laptopDescription">
               Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
               bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
               eu, rutrum nam.
@@ -69,7 +78,7 @@ function App() {
         <a className="footer-link" href="https://www.appbrewery.co/">
           Website
         </a>
-        <p>© 2020 Marsha Dunn.</p>
+        <p className="footer-copyright">© 2020 Marsha Dunn.</p>
       </div>
     </div>
   );
