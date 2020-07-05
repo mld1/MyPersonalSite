@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <div className="top-container">
         <img src={cloud} alt="cloud" className="top-cloud"></img>
+        <div className="crescent-moon"></div>
         <h1>I'm Marsha</h1>
         <h2 className="subtitle">
           a <span className="pro">pro</span>grammer

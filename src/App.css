@@ -44,6 +44,8 @@ p {
   position: absolute;
   left: 10%;
   width: 20%;
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
 }
 
 .btn {
@@ -70,6 +72,26 @@ p {
   left: 70%;
   width: 20%;
   top: 10%;
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .contact-me {
@@ -78,6 +100,16 @@ p {
   text-align: center;
   line-height: 2;
 }
+
+.crescent-moon {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  box-shadow: -6px 6px 0 3px rgb(228, 201, 79);
+  border-radius: 50%;
+  margin: 1% 0 0 25%;
+}
+
 .emphasiseIt {
   font-style: italic;
 }
